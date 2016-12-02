@@ -1,0 +1,41 @@
+$icon-font-path: '../fonts/';
+
+@media only screen and (min-width: 768px) {
+
+	//section-1
+
+	.section-1 {
+			height: auto;
+		}		
+
+	.slick-dots {
+	 	right: -10px;
+	 }
+
+  
+}
+
+
+@media only screen and (min-width: 992px) {
+	
+	//section-1
+
+	.section-1 {
+			height: 620px;
+		}		
+ 
+}
+
+
+@media only screen and (min-width: 1200px) {
+
+  .container {
+	min-width: 1200px;
+  }
+
+  .slick-dots {
+ 	right: -40px;
+ }
+  
+}
+
