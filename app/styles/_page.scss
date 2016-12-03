@@ -79,6 +79,8 @@ $icon-font-path: '../fonts/';
 	width: 190px;
 	border: 1px solid #c90a05;	
 	border-radius: 2px;
+	position: relative;
+	z-index: 1
 }
 
 //SECTION-1
@@ -130,6 +132,8 @@ $icon-font-path: '../fonts/';
 	font-weight: bold;
 	text-transform: uppercase;
 	border: 1px solid #84909e;
+	position: relative;
+	z-index: 1;
 
 	&:hover,
 	&:focus,
@@ -195,9 +199,7 @@ $icon-font-path: '../fonts/';
 
 }
 
-.slider {
-	//max-width: 339px;
-	//float: right;	
+.slider {	
 
 	.slide {
 		width: 100%;
@@ -418,6 +420,86 @@ $icon-font-path: '../fonts/';
 			line-height: 1.5em;
 		}		
 	}
+}
+
+//SECTION-4
+
+.section-4 {
+	font-family: 'Exo 2', sans-serif;
+	background: #0461b5;	
+	padding: 3rem 0;
+	color: #fff;
+
+	.image-wrap {
+		width: 100%;
+		position: relative;		
+		//height: 622px;
+
+		img {
+			//width: 100%;
+			height: 510px;
+			//position: absolute;
+			left: 0;
+			bottom: 0;
+			
+		}
+
+	}
+
+}
+
+.action-column {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+
+.action-list {	
+	padding: 4.5rem 0;
+}
+
+
+.action-item {
+	list-style:none;
+
+	&:nth-child(3) {
+		margin-top: 4rem;
+	}
+
+	&:nth-child(4) {
+		margin-top: 4rem;
+	}
+
+	span {
+		font-size: 18px;
+		font-weight: 600;
+		display: block;
+		text-align: center;
+		margin: 0 auto;
+		width: 209px;
+	}
+
+	.action-icon {
+		background: url(../images/cloud-small-image.png);
+		background-size: cover;
+		width: 125px;
+		height: 97px;
+		margin: 0 auto 30px;	
+
+		display:flex;
+		align-items: center;
+		justify-content: center;
+
+	span {
+		font-family: 'CooperHewitt', sans-serif;
+		color: #2a2a2a;
+		font-size: 36px;
+
+	}
+
+}
+
 }
 
 

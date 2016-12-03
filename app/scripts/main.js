@@ -10,16 +10,7 @@ jQuery(document).ready(function() {
       dots: true,
       slidesToShow: 1,
       slidesToScroll: 1,
-
-      /*responsive: [
-        {
-          breakpoint: 1025,
-            settings: {        
-            arrows: false,
-            dots: false
-          }
-        }
-      ]*/
+      
     });
 
 
@@ -33,7 +24,7 @@ jQuery(document).ready(function() {
         offset: 100
     });
 
-    $('').addClass("is-hidden").viewportChecker({
+    $('.deg').addClass("is-hidden").viewportChecker({
         classToAdd: 'visible animated wobble',
         offset: 100
     });

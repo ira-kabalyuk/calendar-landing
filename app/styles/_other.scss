@@ -49,12 +49,12 @@ $icon-font-path: '../fonts/';
 	//section-3
 
 	.section-3 {
+		height: auto;
 		
 		.image-wrap {
 			width: 100%;
 			position: static;
-			transform: translateX(0);
-
+			
 			img {
 				display: none;				
 			}
@@ -122,12 +122,12 @@ $icon-font-path: '../fonts/';
 	//section-3
 
 	.section-3 {
+		//min-height: 729px;
 		
 		.image-wrap {
 			width: 473px;
-			position: absolute;
-			left: 50%;
-			transform: translateX(-50%);
+			position: relative;
+			margin: 0 auto;
 
 			img {
 				display: block;				
