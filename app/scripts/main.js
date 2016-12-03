@@ -38,12 +38,12 @@ jQuery(document).ready(function() {
         offset: 100
     });
 
-    $('.in-field').addClass("is-hidden").viewportChecker({
+    $('.leftfly').addClass("is-hidden").viewportChecker({
         classToAdd: 'visible animated bounceInLeft',
         offset: 100
     });
 
-    $('.field').addClass("is-hidden").viewportChecker({
+    $('.rightfly').addClass("is-hidden").viewportChecker({
         classToAdd: 'visible animated bounceInRight',
         offset: 100
     });  

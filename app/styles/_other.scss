@@ -45,6 +45,55 @@ $icon-font-path: '../fonts/';
 	  float: none;
 	  margin: 0 auto;
 	}	
+
+	//section-3
+
+	.section-3 {
+		
+		.image-wrap {
+			width: 100%;
+			position: static;
+			transform: translateX(0);
+
+			img {
+				display: none;				
+			}
+
+		}
+
+	}
+	
+
+	.left-column-list	{
+		position: static;
+		margin-bottom: 25px;	
+
+		li {
+			margin-bottom: 25px;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+
+		}	
+
+	}
+
+	.right-column-list	{
+		position: static;
+
+		li {
+			background: url(../images/plashka-white-l.png) no-repeat;
+			background-size: cover;
+			margin-bottom: 25px;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+
+		}	
+
+	}
   
 }
 
@@ -68,7 +117,48 @@ $icon-font-path: '../fonts/';
 	.slider-block {	  
 	  max-width: 339px;
 	  float: right;
-	}		
+	}	
+
+	//section-3
+
+	.section-3 {
+		
+		.image-wrap {
+			width: 473px;
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+
+			img {
+				display: block;				
+			}
+
+		}
+
+	}
+
+	.left-column-list	{
+		margin-bottom: 0;
+		position: absolute;
+		left: -55%;
+
+		li {
+			margin-bottom: 10%;	
+		}
+
+	}
+
+	.right-column-list	{
+		position: absolute;
+		right: -55%;
+
+		li {
+			background: url(../images/plashka-white-r.png) no-repeat;
+			background-size: cover;
+			margin-bottom: 10%;
+		}
+
+	}
  
 }
 
@@ -89,6 +179,16 @@ $icon-font-path: '../fonts/';
  .slick-prev,
 	.slick-next {
 		right: -40px;
+	}
+
+	//section-3
+
+	.left-column-list	{
+		left: -60%;
+	}
+
+	.right-column-list	{
+		right: -60%;
 	}
 
 }

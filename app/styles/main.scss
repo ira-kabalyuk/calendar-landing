@@ -8,6 +8,7 @@ $icon-font-path: '../fonts/';
 @import "_fonts";
 @import "_reset";
 @import "_animate";
+@import "_buttons";
 @import "_slick";
 @import "_slick-theme";
 @import "_page";
@@ -21,4 +22,5 @@ $icon-font-path: '../fonts/';
 @import "_max-667.scss";
 @import "_max-568.scss";
 @import "_max-375.scss";
+@import "_max-320.scss";
   

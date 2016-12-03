@@ -127,5 +127,54 @@ $icon-font-path: '../fonts/';
 		width: 220px;		
 		margin: 10px auto 20px;
  	}
+
+ 	//section-3
+
+	.section-3 {
+		
+		.image-wrap {
+			width: 100%;
+			position: static;
+			transform: translateX(0);
+
+			img {
+				display: none;				
+			}
+
+		}
+
+	}
+	
+
+	.left-column-list	{
+		position: static;
+		margin-bottom: 25px;	
+
+		li {
+			margin-bottom: 25px;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+
+		}	
+
+	}
+
+	.right-column-list	{
+		position: static;
+
+		li {
+			background: url(../images/plashka-white-l.png) no-repeat;
+			background-size: cover;
+			margin-bottom: 25px;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+
+		}	
+
+	}
   
 }
