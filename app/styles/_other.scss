@@ -5,24 +5,69 @@ $icon-font-path: '../fonts/';
 	//section-1
 
 	.section-1 {
-			height: auto;
-		}		
+		height: auto;
+	}
+
+	.left-column {
+		padding: 4rem 0;
+
+		.button-block {
+			display: flex;
+		}
+
+	}
+
+	.right-column {
+		padding: 1rem 0;
+
+		.button-block {
+			display: none;
+		}
+	}	
+
+		.title-text {			
+		margin: 20px auto 46px;
+	}	
 
 	.slick-dots {
 	 	right: -10px;
 	 }
 
+
+	.slick-prev,
+	.slick-next {
+		right: -15px;
+	}
+
+	.slider-block {	  
+	  max-width: 339px;
+	  float: none;
+	  margin: 0 auto;
+	}	
   
 }
 
 
 @media only screen and (min-width: 992px) {
-	
+
 	//section-1
 
 	.section-1 {
-			height: 620px;
-		}		
+		height: 620px;
+	}
+
+	.left-column {
+		padding: 9rem 0;		
+	}
+
+	.right-column {
+		padding: 4rem 0;
+	}
+
+	.slider-block {	  
+	  max-width: 339px;
+	  float: right;
+	}		
  
 }
 
@@ -34,8 +79,27 @@ $icon-font-path: '../fonts/';
   }
 
   .slick-dots {
- 	right: -40px;
+ 	right: -12px;
  }
+
+ .slick-prev,
+	.slick-next {
+		right: -16px;
+	}
   
 }
+
+@media only screen and (min-width: 1366px) {	
+
+  .slick-dots {
+ 	right: -40px;
+ }
+
+ .slick-prev,
+	.slick-next {
+		right: -45px;
+	}
+  
+}
+
 

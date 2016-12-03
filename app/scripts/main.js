@@ -4,10 +4,21 @@ console.log('\'Allo \'Allo!');
 jQuery(document).ready(function() {
 
      $('.slider').slick({
+    accessibility: false,
       infinite: true,
       dots: true,
       slidesToShow: 1,
-      slidesToScroll: 1
+      slidesToScroll: 1,
+
+      responsive: [
+        {
+          breakpoint: 1024,
+            settings: {        
+            arrows: false,
+            dots: false,
+          }
+        }
+      ]
     });
 
 
@@ -21,7 +32,7 @@ jQuery(document).ready(function() {
         offset: 100
     });
 
-    $('.slide').addClass("is-hidden").viewportChecker({
+    $('').addClass("is-hidden").viewportChecker({
         classToAdd: 'visible animated wobble',
         offset: 100
     });

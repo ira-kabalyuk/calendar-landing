@@ -1,9 +1,108 @@
 $icon-font-path: '../fonts/';
 
 @media only screen and (max-width: 767px) {
+	
+
+	.header {
+		height: 60px;
+	}
+
+	.contacts-block {
+		height: 60px;
+	}
+
+	.header-button {
+		width: 127px;
+		padding: 8px 0;
+		font-size: 14px;
+	}
+
+	.phone {
+		font-size: 14px;
+	}
+
+	//section-1
+
+	.section-1 {
+		height: auto;
+		margin-top: 60px;
+	}	
+
+	.left-column {
+		padding: 4rem 0 0 0;
+
+		.button-block {
+			display: none;
+		}
+
+		.title-text {
+			margin: 20px auto;
+		}		
+	}
+
+	.right-column {
+		padding: 1rem 0;
+
+		.button-block {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			margin: 0 auto;
+
+			button {
+
+				&:last-child {
+					border: none;
+					font-weight: 400;
+					margin-top: 10px;
+				}
+			}
+		}
+
+	}
+
+	.slider-block {	  
+	  max-width: 339px;
+	  float: none;
+	  margin: 0 auto;
+	}
+
+	.title-text {			
+		margin: 20px auto 46px;
+	}
 
   .slick-dots {
  	right: -10px;
  }
+
+ .slider-title-text {
+ 	text-align: center;
+
+ 	span {
+ 			&:first-child {
+			display: none;
+	 	}
+
+ 	} 
+
+ }
+
+ .bg-block {
+		
+		.slider-title-text {
+
+			span {
+
+				&:first-child {
+					display: block;
+			 	}
+
+			}
+
+		}
+
+ 	}
   
 }
