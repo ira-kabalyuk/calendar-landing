@@ -36,7 +36,8 @@ $icon-font-path: '../fonts/';
 
 	.slick-prev,
 	.slick-next {
-		right: -15px;
+		right: -10px;
+
 	}
 
 	.slider-block {	  
@@ -57,7 +58,7 @@ $icon-font-path: '../fonts/';
 	}
 
 	.left-column {
-		padding: 9rem 0;		
+		//padding: 9rem 0;		
 	}
 
 	.right-column {
@@ -75,31 +76,22 @@ $icon-font-path: '../fonts/';
 @media only screen and (min-width: 1200px) {
 
   .container {
-	min-width: 1200px;
+		min-width: 1200px;
+		width: auto;
+		padding-left: 80px;
+		padding-right: 80px;
   }
 
-  .slick-dots {
- 	right: -12px;
- }
-
- .slick-prev,
-	.slick-next {
-		right: -16px;
-	}
-  
-}
-
-@media only screen and (min-width: 1366px) {	
-
-  .slick-dots {
+ .slick-dots {
  	right: -40px;
  }
 
  .slick-prev,
 	.slick-next {
-		right: -45px;
+		right: -40px;
 	}
-  
+
 }
+
 
 

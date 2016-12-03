@@ -73,9 +73,14 @@ $icon-font-path: '../fonts/';
 		margin: 20px auto 46px;
 	}
 
-  .slick-dots {
- 	right: -10px;
+  .slick-dots { 	
+ 	display: none !important;
  }
+
+ .slick-prev,
+	.slick-next {		
+		display: none !important;
+	}
 
  .slider-title-text {
  	text-align: center;
@@ -103,6 +108,24 @@ $icon-font-path: '../fonts/';
 
 		}
 
+ 	}
+
+ 	//section-2
+
+ 	.section-2 {
+
+		h2 {
+			font-size: 16px;
+			text-transform: uppercase;
+			width: 195px;			
+		}
+ 	}
+
+ 	.title-description {
+		font-size: 16px;
+		text-transform: uppercase;
+		width: 220px;		
+		margin: 10px auto 20px;
  	}
   
 }

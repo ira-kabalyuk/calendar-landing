@@ -5,20 +5,21 @@ jQuery(document).ready(function() {
 
      $('.slider').slick({
     accessibility: false,
-      infinite: true,
+      infinite: true,      
+      arrows: true,
       dots: true,
       slidesToShow: 1,
       slidesToScroll: 1,
 
-      responsive: [
+      /*responsive: [
         {
-          breakpoint: 1024,
+          breakpoint: 1025,
             settings: {        
             arrows: false,
-            dots: false,
+            dots: false
           }
         }
-      ]
+      ]*/
     });
 
 
