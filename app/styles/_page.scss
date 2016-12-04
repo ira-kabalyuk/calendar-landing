@@ -400,8 +400,7 @@ $icon-font-path: '../fonts/';
 .section-4 {
 	font-family: 'Exo 2', sans-serif;
 	background: #0461b5;
-	background-size: cover;
-	padding: 3rem 0;
+	background-size: cover;	
 	color: #fff;
 	position: relative;
 	
@@ -417,7 +416,8 @@ $icon-font-path: '../fonts/';
 	.comic-girl {			
 			width: 100%;
 	    left: 0;
-	    bottom: 0;		
+	    bottom: 0;
+	    vertical-align: top;		
 		}
 
 		.cloud {
@@ -430,20 +430,16 @@ $icon-font-path: '../fonts/';
 
 		.element {
 			width: 13%;
-			right: 0;
-			top: 50%;
+			right: -13%;
+			top: 7%;
 			position: absolute;
 		}
 
 
-	.bg-block {
-		background-image: url(../images/bg-woman.png);
-		background-repeat: no-repeat; 
-		background-position: 0 100%;
+	.bg-block {		
+		background-repeat: no-repeat;		
 		background-size: contain;	
-		position: absolute;
-		width: 50%;
-		height: 100%;
+		position: absolute;		
 		bottom: 0;
 		left: 0;
 	}
@@ -454,7 +450,7 @@ $icon-font-path: '../fonts/';
 
 
 .action-left-column {
-	position: absolute;
+	
   height: 100%;
   bottom: 0;
 }
@@ -465,10 +461,6 @@ $icon-font-path: '../fonts/';
 	justify-content: center;
 	position: relative;
 	float: right;
-}
-
-.action-list {	
-	padding: 4.5rem 0;
 }
 
 
@@ -522,15 +514,26 @@ $icon-font-path: '../fonts/';
 
 	}
 
+	.mobile-img-wrap {
+		width: 100%;
+		position: relative;
+		margin: 0 auto;
+		text-align: center;		
+
+		.mobile-girl {
+			width: 100%;
+			top: 0;
+		}
+	}
+
 	//SECTION-5
 
-	.section-5 {
-		//display: none;
+	.section-5 {		
 		font-family: 'Exo 2', sans-serif;
 		background: url(../images/section-5-bg.png) no-repeat;
 		background-size: cover;
 		position: relative;
-		//height: 708px;
+		height: 708px;
 	}
 
 	.section-img-wrap {
@@ -549,10 +552,23 @@ $icon-font-path: '../fonts/';
 		}
 
 		h2 {
-			font-size: 32px;
+			font-size: 36px;
 			font-weight: 800;
+			text-align: center;
 			text-transform: uppercase;
+			margin: 2.6rem auto;
 		}
+
+		.button-block {
+			justify-content: center;
+
+			.btn {
+				font-size: 24px;
+				padding: 15px 0;
+				width: 50%;
+			}
+		}
+
 	}
 
 	.santa {
