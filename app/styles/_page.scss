@@ -406,19 +406,16 @@ $icon-font-path: '../fonts/';
 	position: relative;
 	
 
-	.image-wrap {
-		//width: 468px;
-		//background: url(../images/comic-girl.png) no-repeat;
-		//background-position: 100% 100%;
-		//background-size: contain;
-		width: 100%;
-		//width: 468px;
+	.image-wrap {		
+		width: 63%;		
 		height: 100%;
-		position: relative;		
+		position: absolute;
+		left: 0;
+	  bottom: 0;		
 	}
 
 	.comic-girl {			
-			width: 63%;
+			width: 100%;
 	    left: 0;
 	    bottom: 0;
 	    position: absolute;
@@ -426,9 +423,9 @@ $icon-font-path: '../fonts/';
 		}
 
 		.cloud {
-			width: 48%;
-			right: 213px;
-    	top: 31px;
+			width: 90%;
+			right: -22%;
+    	top: 16%;
     	z-index: 100;
 	    position: absolute;
 		}
@@ -529,20 +526,34 @@ $icon-font-path: '../fonts/';
 	//SECTION-5
 
 	.section-5 {
+		display: none;
+		font-family: 'Exo 2', sans-serif;
 		background: url(../images/section-5-bg.png) no-repeat;
 		background-size: cover;
 		position: relative;
-		height: 708px;
+		//height: 708px;
 	}
 
 	.section-img-wrap {
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		flex-direction: column;
 		margin: 0 auto;
 		position: relative;
-		//width: 68%;
+		width: 43%;
 		height: 100%;
+		padding: 9.5rem 0;
+
+		img {
+			width: 100%;
+		}
+
+		h2 {
+			font-size: 32px;
+			font-weight: 800;
+			text-transform: uppercase;
+		}
 	}
 
 	.santa {
@@ -555,6 +566,7 @@ $icon-font-path: '../fonts/';
 	.cloud-image {
 		width:68%;
 		position: absolute;
+		top: 0;
 		//top: 50%;
 		//transform: translateY(-50%);
 		left: 50%;
