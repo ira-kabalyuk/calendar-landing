@@ -40,6 +40,10 @@ $icon-font-path: '../fonts/';
 		}		
 	}
 
+	.btn {
+    width: 188px;
+	}
+
 	.right-column {
 		padding: 1rem 0;
 
@@ -135,47 +139,34 @@ $icon-font-path: '../fonts/';
 		
 		.image-wrap {
 			width: 100%;
-			position: static;
-			transform: translateX(0);
-
-			img {
-				display: none;				
-			}
+			position: static;			
 
 		}
 
 	}
+
+	.section-img {
+		display: none;
+	}
 	
 
-	.left-column-list	{
+	.column {
 		position: static;
-		margin-bottom: 25px;	
+		margin: 0 auto;
 
 		li {
-			margin-bottom: 25px;
-
-			&:last-child {
-				margin-bottom: 0;
-			}
-
-		}	
+			margin-bottom: 0;
+		}
 
 	}
 
-	.right-column-list	{
-		position: static;
+	.right-column-list {
 
-		li {
-			background: url(../images/plashka-white-l.png) no-repeat;
-			background-size: cover;
-			margin-bottom: 25px;
-
-			&:last-child {
-				margin-bottom: 0;
-			}
-
-		}	
+		.icon-r {
+			display: none;
+		}
 
 	}
+  
   
 }

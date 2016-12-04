@@ -9,12 +9,17 @@ $icon-font-path: '../fonts/';
 	}
 
 	.left-column {
-		padding: 4rem 0;
+		//padding: 4rem 0;
+		padding: 13% 0;
 
 		.button-block {
 			display: flex;
 		}
 
+	}
+
+	.btn {
+		width: 188px;
 	}
 
 	.right-column {
@@ -40,11 +45,13 @@ $icon-font-path: '../fonts/';
 
 	}
 
-	.slider-block {	  
+	.slider-block {			
 	  max-width: 339px;
 	  float: none;
 	  margin: 0 auto;
 	}	
+
+	
 
 	//section-3
 
@@ -53,45 +60,32 @@ $icon-font-path: '../fonts/';
 		
 		.image-wrap {
 			width: 100%;
-			position: static;
-			
-			img {
-				display: none;				
-			}
+			position: static;			
 
 		}
 
 	}
+
+	.section-img {
+		display: none;
+	}
 	
 
-	.left-column-list	{
+	.column {
 		position: static;
-		margin-bottom: 25px;	
+		margin: 0 auto;
 
 		li {
-			margin-bottom: 25px;
-
-			&:last-child {
-				margin-bottom: 0;
-			}
-
-		}	
+			margin-bottom: 0;
+		}
 
 	}
 
-	.right-column-list	{
-		position: static;
+	.right-column-list {
 
-		li {
-			background: url(../images/plashka-white-l.png) no-repeat;
-			background-size: cover;
-			margin-bottom: 25px;
-
-			&:last-child {
-				margin-bottom: 0;
-			}
-
-		}	
+		.icon-r {
+			display: none;
+		}
 
 	}
   
@@ -103,7 +97,7 @@ $icon-font-path: '../fonts/';
 	//section-1
 
 	.section-1 {
-		height: 620px;
+		//height: 620px;
 	}
 
 	.left-column {
@@ -125,37 +119,47 @@ $icon-font-path: '../fonts/';
 		//min-height: 729px;
 		
 		.image-wrap {
-			width: 473px;
+			//width: 473px;
+			width: 40%;
 			position: relative;
-			margin: 0 auto;
+			margin: 0 auto;			
 
-			img {
-				display: block;				
+		}
+
+	}
+
+	.section-img {
+		display: block;
+	}
+
+	.column {
+		position: absolute;
+
+		li {
+			margin-bottom: 2%;
+
+			span {
+				font-size: 15px;
 			}
 
 		}
 
 	}
 
-	.left-column-list	{
-		margin-bottom: 0;
-		position: absolute;
-		left: -55%;
-
-		li {
-			margin-bottom: 10%;	
-		}
+	.left-column-list	{		
+		left: -60%;		
 
 	}
 
-	.right-column-list	{
-		position: absolute;
-		right: -55%;
+	.right-column-list	{		
+		right: -60%;
 
-		li {
-			background: url(../images/plashka-white-r.png) no-repeat;
-			background-size: cover;
-			margin-bottom: 10%;
+		.icon {
+			display: none;
+		}	
+
+		.icon-r {
+			display: flex;
 		}
 
 	}
@@ -181,14 +185,40 @@ $icon-font-path: '../fonts/';
 		right: -40px;
 	}
 
-	//section-3
+	//section-1 
 
-	.left-column-list	{
-		left: -60%;
+	.btn {
+		width: 44%;
 	}
 
-	.right-column-list	{
-		right: -60%;
+	.slider-block {	
+		//max-width: percent(339);
+		max-width: 60%;	  
+	  float: right;
+	  margin: 0 auto;
+	}	
+
+	//section-3
+
+	.section-3 {
+
+		.image-wrap {
+			//width: 42%;
+		}
+
+	}
+
+	.column {
+		position: absolute;
+
+		li {			
+
+			span {
+				font-size: 18px;
+			}
+
+		}
+
 	}
 
 }

@@ -1,5 +1,11 @@
 $icon-font-path: '../fonts/';
 
+@function percent($size) {
+ $unit: "%";
+ $sz: $size/1200;
+ @return $sz#{$unit};
+}
+
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 // endbower

@@ -94,7 +94,7 @@ $icon-font-path: '../fonts/';
 }
 
 .heading {
-	max-width: 100%;
+	width: 100%;
 
 	img {
 		width: 100%;
@@ -124,7 +124,7 @@ $icon-font-path: '../fonts/';
 }
 
 .btn {
-	width: 188px;
+	//width: 188px;
 	padding: 15px 0;
 	border-radius: 3px;
 	background: transparent;
@@ -156,7 +156,7 @@ $icon-font-path: '../fonts/';
 	width: 162px;
 	position: absolute;
 	bottom: 85px;
-	left: -138px;
+	left: -127px;
 	z-index: 20;	
 }
 
@@ -343,28 +343,35 @@ $icon-font-path: '../fonts/';
 
 }
 
-.left-column-list {	
-	top: 70px;	
+.column {	
+	//top: 70px;	
+	top: 7%;
 	display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
+  width: 81%;
 
 	li {
-		background: url(../images/plashka-white-l.png) no-repeat;
-		background-size: cover;		
-		list-style: none;
-		width: 374px;
-		height: 137px;			
-		display: block;		
+		//background: url(../images/plashka-white-2-l.png) no-repeat;
+		//background-size: cover;		
+		//list-style: none;
+		//width: 374px;
+		//height: 170px;			
+		//display: block;	
+		width: 100%;	
 		position: relative;
 
 		display: flex;
 		align-items: center;
-		justify-content: center;		
+		justify-content: center;
 
-		.icon	{
+		.icon {
+			//width: 358px;
+			width: 100%;
+		}		
+
+		/*.icon	{
 			background: url(../images/check-element.png) no-repeat;
 			display: block;
 			width: 73px;
@@ -373,136 +380,82 @@ $icon-font-path: '../fonts/';
 			right: 36px;
 			top:-50%;
 			transform: translateY(50%);
-		}
+		}*/
 
 		span {
 			font-size: 18px;
 			font-weight: 700;
 			line-height: 1.5em;
+			position: absolute;
 		}
 		
 	}
 
 }
 
-.right-column-list {	
-	top: 70px;	
-	display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 
-	li {		
-		list-style: none;
-		width: 374px;
-		height: 137px;				
-		display: block;		
-		position: relative;			
-
-		display: flex;
-		align-items: center;
-		justify-content: center;		
-
-		.icon	{
-			background: url(../images/check-element.png) no-repeat;
-			display: block;
-			width: 73px;
-			height: 73px;
-			position: absolute;
-			right: 36px;
-			top:-50%;
-			transform: translateY(50%);
-		}
-
-		span {
-			font-size: 18px;
-			font-weight: 700;
-			line-height: 1.5em;
-		}		
-	}
-}
 
 //SECTION-4
 
 .section-4 {
 	font-family: 'Exo 2', sans-serif;
 	background: #0461b5;
-	
+	background-size: cover;
 	padding: 3rem 0;
 	color: #fff;
 	position: relative;
 	
 
 	.image-wrap {
-		width: 468px;
+		//width: 468px;
+		//background: url(../images/comic-girl.png) no-repeat;
+		//background-position: 100% 100%;
+		//background-size: contain;
+		width: 100%;
+		//width: 468px;
 		height: 100%;
-		position: relative;
-		
+		position: relative;		
+	}
 
-		img {
-			//height: 510px;
-			width: 100%;
+	.comic-girl {			
+			width: 63%;
 	    left: 0;
 	    bottom: 0;
 	    position: absolute;
 			
 		}
 
-	}
+		.cloud {
+			width: 48%;
+			right: 213px;
+    	top: 31px;
+    	z-index: 100;
+	    position: absolute;
+		}
+
+		.element {
+			width: 79px;
+			right: -5%;
+			top: 38%;
+		}
+
 
 	.bg-block {
-	background-image: url(../images/bg-woman.png);
-	background-repeat: no-repeat; 
-	background-position: 0 100%;	
-	position: absolute;
-	width: 50%;
-	height: 100%;
-	bottom: 0;
-	left: 0;
-}
-
-}
-
-
-
-.element {
-	background: url(../images/element-15377.png) no-repeat;
-	background-size: contain;
-	width: 79px;
-	height: 132px;
-	display: block;
-
-	position: absolute;
-	right: -5%;
-	top: 38%;
-}
-
-.cloud-icon {
-	background: url(../images/cloud-talk-iamge.png) no-repeat;
-	background-size: contain;
-	position: absolute;
-	width: 390px;
-	height: 229px;
-	display: block;
-	left: 35%;
-	top: 12%;
-	z-index: 200;	
-
-	display: flex;
-	align-items: center;
-	justify-content: center;
-
-	span {
-		text-transform: uppercase;
-		color: #2a2a2a;
-		font-size: 36px;
-		font-weight: 700;
-		display: block;
-		text-align: center;
-		margin-top: -50px;
+		background-image: url(../images/bg-woman.png);
+		background-repeat: no-repeat; 
+		background-position: 0 100%;
+		background-size: contain;	
+		position: absolute;
+		width: 50%;
+		height: 100%;
+		bottom: 0;
+		left: 0;
 	}
 
 }
+
+
+
 
 .action-left-column {
 	position: absolute;
@@ -543,27 +496,74 @@ $icon-font-path: '../fonts/';
 			width: 209px;
 		}
 
-		.action-icon {
-			background: url(../images/cloud-small-image.png);
-			background-size: cover;
-			width: 125px;
-			height: 97px;
-			margin: 0 auto 30px;	
+	}	
 
-			display:flex;
-			align-items: center;
-			justify-content: center;
+	.action-wrapper {
+		position: relative;
+		width: 50%;
+		margin: 0 auto 30px;
+
+		display:flex;
+		align-items: center;
+		justify-content: center;		
 
 		span {
 			font-family: 'CooperHewitt', sans-serif;
 			color: #2a2a2a;
 			font-size: 36px;
-
+			display: block;
+			position: absolute;
+			//top: 50%;
+			transform: translateY(-50%);
+			left: 50%;
+			transform: translateX(-50%);
 		}
 
 	}
 
-}
+	.action-icon {			
+		width: 100%;		
+
+	}
+
+	//SECTION-5
+
+	.section-5 {
+		background: url(../images/section-5-bg.png) no-repeat;
+		background-size: cover;
+		position: relative;
+		height: 708px;
+	}
+
+	.section-img-wrap {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: 0 auto;
+		position: relative;
+		//width: 68%;
+		height: 100%;
+	}
+
+	.santa {
+		width: 24%;
+		position: absolute;
+		bottom: 0;
+		left: 20px;
+	}
+
+	.cloud-image {
+		width:68%;
+		position: absolute;
+		//top: 50%;
+		//transform: translateY(-50%);
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
+		
+
+
 
 
 
