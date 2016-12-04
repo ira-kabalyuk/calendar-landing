@@ -213,6 +213,82 @@ $icon-font-path: '../fonts/';
 	.action-right-column{		
 		padding-bottom: 4rem;
 	}
+
+	//section-5
+
+	.section-5 {
+		overflow: hidden;
+	}
+
+	.santa {
+		display: none;
+	}
+
+	.cloud-image {
+		//height: 289px;
+		width: 150%;
+		margin-left: -27%;
+		margin-top: 7rem;
+		margin-bottom: 9rem
+	}
+
+	.section-img-wrap {
+		width: 100%;
+		height: auto;
+		top: 47px;
+
+		img {
+			width: 90%;
+		}
+
+		h2 {
+		font-size: 36px;			
+			margin: 40% auto 1.6rem;
+		}
+
+		.button-block {
+			justify-content: center;
+
+			.btn {
+				font-size: 16px;
+				padding: 15px 0;
+				width: 191px;
+			}
+
+		}
+
+	}
+
+	//FOOTER
+
+	.footer {
+		height: auto;
+		padding: 25px 0;
+	}
+
+	.footer-column {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.net-block {
+		align-items: center;
+		justify-content: center;
+
+		a {
+			padding: 0 11px;
+		}
+
+	}
+
+	.footer-center-column {
+
+		>* {
+			padding: 15px 0;
+		}
+
+	}
   
   
 }

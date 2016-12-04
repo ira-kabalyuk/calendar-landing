@@ -44,10 +44,10 @@ jQuery(document).ready(function() {
         offset: 100
     });   
 
-    $(".input-head").click(function() {        
-        $(".input-list").toggleClass("in-visible");
+    $('.jump').addClass("is-hidden").viewportChecker({
+        classToAdd: 'visible animated bounceIn',
+        offset: 100
     });
-    
 
 });
 
