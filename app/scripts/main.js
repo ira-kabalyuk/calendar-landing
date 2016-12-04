@@ -49,6 +49,11 @@ jQuery(document).ready(function() {
         offset: 100
     });
 
+     $('.twitt').addClass("is-hidden").viewportChecker({
+        classToAdd: 'visible animated shake',
+        offset: 100
+    });
+
 });
 
 

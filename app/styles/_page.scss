@@ -1,5 +1,9 @@
 $icon-font-path: '../fonts/';
 
+body {
+	overflow-x: hidden;
+}
+
 .is-hidden{
   opacity:0;
 }
@@ -368,7 +372,13 @@ $icon-font-path: '../fonts/';
 			font-size: 18px;
 			font-weight: 700;
 			line-height: 1.5em;
-			position: absolute;
+			position: absolute;			
+			top: 40%;
+			//transform: translateY(-50%);
+			left: 50%;
+			transform: translateX(-50%);
+			width: 100%;
+			text-align: center;
 		}
 		
 	}
@@ -483,7 +493,7 @@ $icon-font-path: '../fonts/';
 			font-size: 36px;
 			display: block;
 			position: absolute;
-			//top: 50%;
+			top: 30%;
 			transform: translateY(-50%);
 			left: 50%;
 			transform: translateX(-50%);
