@@ -51,6 +51,7 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	
 }
 
 .phone {
@@ -81,7 +82,7 @@ body {
 	text-transform: uppercase;
 	padding: 15px 0;
 	width: 190px;
-	border: 1px solid #c90a05;	
+	border: 2px solid #c90a05;	
 	border-radius: 2px;
 	position: relative;
 	z-index: 1
@@ -135,7 +136,7 @@ body {
 	font-size: 16px;
 	font-weight: bold;
 	text-transform: uppercase;
-	border: 1px solid #84909e;
+	border: 2px solid #84909e;
 	position: relative;
 	z-index: 1;
 
@@ -264,7 +265,7 @@ body {
 	border-left: 1px solid #fff;
 	transform: rotate(45deg);
 
-	top: 18%;	
+	top: 85px;	
 	left: auto;
 	margin-top: 0;
 }
@@ -278,7 +279,7 @@ body {
 	border-right: 1px solid #fff;
 	transform: rotate(45deg);
 
-	bottom: 18%;	
+	bottom: 85px;	
 	left: auto;
 	margin-bottom: 0;
 	top: auto;
@@ -491,10 +492,13 @@ body {
 			font-family: 'CooperHewitt', sans-serif;
 			color: #2a2a2a;
 			font-size: 36px;
-			display: block;
+			display: flex;
+			align-items: center;
+			justify-content: center;
 			position: absolute;
-			top: 30%;
-			transform: translateY(-50%);
+			height: 100%;
+			top: 0;
+			//transform: translateY(-50%);
 			left: 50%;
 			transform: translateX(-50%);
 		}
@@ -524,7 +528,8 @@ body {
 		font-family: 'Exo 2', sans-serif;
 		background: url(../images/section-5-bg.png) no-repeat;
 		background-size: cover;
-		position: relative;		
+		position: relative;
+		margin-top: -1px;		
 	}
 
 	.section-img-wrap {
