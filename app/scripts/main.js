@@ -54,34 +54,39 @@ jQuery(document).ready(function() {
         offset: 100
     });
 
+     //кнопки для перехода по странице
+
      $(".slick-btn").click(function( e ) {        
        $(".slick-btn").removeClass("slick-active")
         $(this).addClass("slick-active");
+       /* $(this).find('a').click();*/
     });
 
      $('.slick-next').click(function(){
         var buttons = $(".slick-btn");
-        var selectedIndex = buttons.find(".slick-active").index();
+        var selectedIndex = buttons.filter(".slick-active").index();
         var next;
         if(selectedIndex >= buttons.length - 1) {
             next = $(buttons[0]);
         } else {
             next = $(buttons[selectedIndex + 1]);
         }
-        next.click();
+        next.find('a').click();
     });
 
     $('.slick-prev').click(function(){
         var buttons = $(".slick-btn");
-        var selectedIndex = buttons.find(".slick-active").index();
+        var selectedIndex = buttons.filter(".slick-active").index();
         var prev;
         if(selectedIndex <= 0) {
             prev = $(buttons[buttons.length - 1]);
         } else {
             prev = $(buttons[selectedIndex - 1]);
         }
-        prev.click();
+        next.find('a').click();
     });
+
+    //скролл якоря
 
     $('html').smoothScroll(300);
 

@@ -1,154 +1,75 @@
 $icon-font-path: '../fonts/';
 
-/* Isi */
-.btn.button--isi {
-	padding: 1.2em 2em;
-	color: #fff;	
-	overflow: hidden;
-}
-.btn.button--isi::before {
-	content: '';
-	z-index: -1;
-	position: absolute;
-	top: 50%;
-	left: 100%;
-	margin: -15px 0 0 1px;
-	width: 30px;
-	height: 30px;
-	border-radius: 50%;
-	background: linear-gradient(to right, #f7e734, #8c0801);	
-	-webkit-transform-origin: 100% 50%;
-	transform-origin: 100% 50%;
-	-webkit-transform: scale3d(1, 2, 1);
-	transform: scale3d(1, 2, 1);
-	-webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
-	transition: transform 0.3s, opacity 0.3s;
-	-webkit-transition-timing-function: cubic-bezier(0.7,0,0.9,1);
-	transition-timing-function: cubic-bezier(0.7,0,0.9,1);
-}
-.btn.button--isi .button__icon {
-	vertical-align: middle;
-}
-.btn.button--isi > span {
-	vertical-align: middle;
-	padding-left: 0.75em;
-}
-.btn.button--isi:hover::before {
-	-webkit-transform: scale3d(9, 9, 1);
-	transform: scale3d(9, 9, 1);
+
+.btn {
+  //border: 1px solid;
+  overflow: hidden;
+  position: relative;
+  
+  span {
+    z-index: 20;
+  }
+  
+  &:after {
+    background: #fff;
+    content: "";
+    height: 155px;
+    left: -75px;
+    opacity: .2;
+    position: absolute;
+    top: -50px;
+    transform: rotate(35deg);
+    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+    width: 50px;
+    z-index: -10;
+  }
 }
 
-.btn.button--isi:focus::before {
-	-webkit-transform: scale3d(9, 9, 1);
-	transform: scale3d(9, 9, 1);
+.btn:hover {
+  
+  &:after {
+    left: 120%;
+    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+  }
 }
-
-.btn.button--isi:active::before {
-	-webkit-transform: scale3d(9, 9, 1);
-	transform: scale3d(9, 9, 1);
-}
-
 
 //header-button
 
 .header-button {
-	padding: 1.2em 2em;
-	color: #fff;
-	background: #7986cb;
-	overflow: hidden;
-}
-.header-button::before {
-	content: '';
-	z-index: -1;
-	position: absolute;
-	top: 50%;
-	left: 100%;
-	margin: -15px 0 0 1px;
-	width: 30px;
-	height: 30px;
-	border-radius: 50%;
-	background: #c90a05;	
-	-webkit-transform-origin: 100% 50%;
-	transform-origin: 100% 50%;
-	-webkit-transform: scale3d(1, 2, 1);
-	transform: scale3d(1, 2, 1);
-	-webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
-	transition: transform 0.3s, opacity 0.3s;
-	-webkit-transition-timing-function: cubic-bezier(0.7,0,0.9,1);
-	transition-timing-function: cubic-bezier(0.7,0,0.9,1);
-}
-.header-button .button__icon {
-	vertical-align: middle;
-}
-.header-button > span {
-	vertical-align: middle;
-	padding-left: 0.75em;
-}
-.header-button:hover::before {
-	-webkit-transform: scale3d(9, 9, 1);
-	transform: scale3d(9, 9, 1);
+  //border: 1px solid;
+  overflow: hidden;
+  position: relative;
+  
+  span {
+    z-index: 20;
+  }
+  
+  &:after {
+    background: #fff;
+    content: "";
+    height: 155px;
+    left: -75px;
+    opacity: .2;
+    position: absolute;
+    top: -50px;
+    transform: rotate(35deg);
+    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+    width: 50px;
+    z-index: -10;
+  }
 }
 
-.header-button:focus::before {
-	-webkit-transform: scale3d(9, 9, 1);
-	transform: scale3d(9, 9, 1);
-}
-
-.header-button:active::before {
-	-webkit-transform: scale3d(9, 9, 1);
-	transform: scale3d(9, 9, 1);
+.header-button:hover {
+  
+  &:after {
+    left: 120%;
+    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+  }
 }
 
 
-//btn
 
 
-.btn {
-	padding: 1.2em 2em;
-	color: #fff;
-	background: #7986cb;
-	overflow: hidden;
-}
-.btn::before {
-	content: '';
-	z-index: -1;
-	position: absolute;
-	top: 50%;
-	left: 100%;
-	margin: -15px 0 0 1px;
-	width: 30px;
-	height: 30px;
-	border-radius: 50%;
-	background: #07315b;	
-	-webkit-transform-origin: 100% 50%;
-	transform-origin: 100% 50%;
-	-webkit-transform: scale3d(1, 2, 1);
-	transform: scale3d(1, 2, 1);
-	-webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
-	transition: transform 0.3s, opacity 0.3s;
-	-webkit-transition-timing-function: cubic-bezier(0.7,0,0.9,1);
-	transition-timing-function: cubic-bezier(0.7,0,0.9,1);
-}
-.btn .button__icon {
-	vertical-align: middle;
-}
-.btn > span {
-	vertical-align: middle;
-	padding-left: 0.75em;
-}
-.btn:hover::before {
-	-webkit-transform: scale3d(9, 9, 1);
-	transform: scale3d(9, 9, 1);
-}
 
-.btn:focus::before {
-	-webkit-transform: scale3d(9, 9, 1);
-	transform: scale3d(9, 9, 1);
-}
-
-.btn:active::before {
-	-webkit-transform: scale3d(9, 9, 1);
-	transform: scale3d(9, 9, 1);
-}
 
 

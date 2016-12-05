@@ -290,6 +290,7 @@ $icon-font-path: '../fonts/';
 
 	.footer-left-column {
 		flex-direction: column;
+		align-items: flex-start;
 	}
 
 	.footer-center-column {
@@ -406,6 +407,22 @@ $icon-font-path: '../fonts/';
 
 	}
 	
+
+}
+
+@media only screen and (min-width: 1400px) {
+
+	.column {
+
+		li {
+
+			span {
+	    	font-size: 22px;
+			}
+
+		}
+
+	}
 
 }
 

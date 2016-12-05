@@ -14,5 +14,18 @@ $icon-font-path: '../fonts/';
 		}
 
  	}
+
+ 	.phone {
+
+ 		 &:before {
+			content:"";
+			background: none;
+			margin-right: 0;
+			width: 0;
+			height: 0;
+			margin-bottom: 0;
+ 		}
+
+ 	}
  	
 }
