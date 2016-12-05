@@ -50,7 +50,7 @@ body {
 	height: 85px;
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: flex-end;
 	
 }
 
@@ -85,7 +85,9 @@ body {
 	border: 2px solid #c90a05;	
 	border-radius: 2px;
 	position: relative;
-	z-index: 1
+	z-index: 1;
+	//margin-left: 106px;
+	margin-left: 22%;
 }
 
 //SECTION-1

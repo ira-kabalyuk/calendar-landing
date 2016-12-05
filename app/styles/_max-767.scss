@@ -9,12 +9,14 @@ $icon-font-path: '../fonts/';
 
 	.contacts-block {
 		height: 60px;
+		justify-content: space-between;
 	}
 
 	.header-button {
 		width: 127px;
 		padding: 8px 0;
 		font-size: 14px;
+		margin-left: 0;
 	}
 
 	.phone {
