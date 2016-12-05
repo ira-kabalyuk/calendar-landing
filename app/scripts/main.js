@@ -3,7 +3,7 @@ console.log('\'Allo \'Allo!');
  
 jQuery(document).ready(function() {
 
-     $('.slider').slick({
+    /* $('.slider').slick({
     accessibility: false,
       infinite: true,      
       arrows: true,
@@ -11,7 +11,7 @@ jQuery(document).ready(function() {
       slidesToShow: 1,
       slidesToScroll: 1,
       
-    });
+    });*/
 
 
     $('.post').addClass("is-hidden").viewportChecker({
@@ -53,6 +53,37 @@ jQuery(document).ready(function() {
         classToAdd: 'visible animated shake',
         offset: 100
     });
+
+     $(".slick-btn").click(function( e ) {        
+       $(".slick-btn").removeClass("slick-active")
+        $(this).addClass("slick-active");
+    });
+
+     $('.slick-next').click(function(){
+        var buttons = $(".slick-btn");
+        var selectedIndex = buttons.find(".slick-active").index();
+        var next;
+        if(selectedIndex >= buttons.length - 1) {
+            next = $(buttons[0]);
+        } else {
+            next = $(buttons[selectedIndex + 1]);
+        }
+        next.click();
+    });
+
+    $('.slick-prev').click(function(){
+        var buttons = $(".slick-btn");
+        var selectedIndex = buttons.find(".slick-active").index();
+        var prev;
+        if(selectedIndex <= 0) {
+            prev = $(buttons[buttons.length - 1]);
+        } else {
+            prev = $(buttons[selectedIndex - 1]);
+        }
+        prev.click();
+    });
+
+    $('html').smoothScroll(300);
 
 });
 

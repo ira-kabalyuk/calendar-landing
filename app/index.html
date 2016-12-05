@@ -26,7 +26,9 @@
        <div class="container">
          <div class="row">
            <div class="logo-block hidden-xs col-sm-5 col-md-6 col-lg-7">
-             <img src="images/logo.png" alt="" class="logo">
+            <a href="">
+              <img src="images/logo.png" alt="" class="logo">
+            </a>  
            </div>
            <div class="contacts-block col-xs-12 col-sm-7 col-md-6 col-lg-5">            
              <span class="phone">+7 (916) 123-45-67</span>
@@ -38,7 +40,7 @@
 
          
     <main class="main"> 
-      <section class="section-1 post">
+      <section class="section-1 post" id="p1">
         <div class="container section-container">
           <div class="row">
            <div class="left-column col-xs-12 col-sm-12 col-md-6 col-lg-6">
@@ -61,41 +63,19 @@
                 </div>
                 <div class="slider">
                   <div class="slide">
-                    <img src="images/calendars-image-1-min.png" alt="">
+                    <img src="images/doc-image-1-min.png" alt="">
                   </div>
-                  <div class="slide">
-                    <img src="images/calendars-image-2-min.png" alt="">
-                  </div>
-                  <div class="slide">
-                    <img src="images/calendars-image-3-min.png" alt="">
-                  </div>
-                  <div class="slide">
-                    <img src="images/calendars-image-4-min.png" alt="">
-                  </div>
-                  <div class="slide">
-                    <img src="images/calendars-image-5-min.png" alt="">
-                  </div>
-                  <div class="slide">
-                    <img src="images/calendars-image-6-min.png" alt="">
-                  </div>
-                  <div class="slide">
-                    <img src="images/calendars-image-7-min.png" alt="">
+                  <div class="nav-block">
+                    <div class="slick-dots">
+                      <li class="slick-btn"><a href="#p1"></a></li>
+                      <li class="slick-btn"><a href="#p2"></a></li>
+                      <li class="slick-btn"><a href="#p3"></a></li>
+                      <li class="slick-btn"><a href="#p4"></a></li>
+                      <li class="slick-btn"><a href="#p5"></a></li>
+                    </div>
+                    <button class="slick-prev"></button>
+                    <button class="slick-next"></button>
                   </div>                  
-                  <div class="slide">
-                    <img src="images/calendars-image-8-min.png" alt="">
-                  </div>
-                  <div class="slide">
-                    <img src="images/calendars-image-9-min.png" alt="">
-                  </div>
-                  <div class="slide">
-                    <img src="images/calendars-image-10-min.png" alt="">
-                  </div>
-                  <div class="slide">
-                    <img src="images/calendars-image-11-min.png" alt="">
-                  </div>
-                  <div class="slide">
-                    <img src="images/calendars-image-12-min.png" alt="">
-                  </div>
                 </div>
               </div>
               <div class="button-block">
@@ -107,7 +87,7 @@
         </div>  
       </section>
 
-      <section class="section-2 post">
+      <section class="section-2 post" id="p2">
         <div class="container">
           <div class="row">
             <h2>12 детализированных карандашных работ</h2>
@@ -156,7 +136,7 @@
         </div>
       </section>
 
-      <section class="section-3 post">
+      <section class="section-3 post" id="p3">
         <div class="container">
           <div class="row">
             <div class="content-wrap">
@@ -199,7 +179,7 @@
         </div>
       </section>
 
-      <section class="section-4 post">
+      <section class="section-4 post" id="p4">
         <div class="container section-container">         
           <div class="bg-block">
             <div class="image-wrap hidden-sm hidden-xs">
@@ -250,7 +230,7 @@
         </div>
       </section>
 
-      <section class="section-5">
+      <section class="section-5" id="p5">
         <img src="images/santa.png" alt="" class="santa">
         <img src="images/cloud-image.png" alt="" class="cloud-image jump">
         <div class="container">
@@ -317,6 +297,7 @@
     <!-- build:js scripts/main.js -->
     
     <script src="scripts/jquery.viewportchecker.min.js"></script>
+    <script src="scripts/jquery.jquery.smoothscroll.min.js"></script>
     <script src="scripts/jquery.fullPage.min.js"></script>
     <script src="scripts/slick.min.js"></script>
     <script src="scripts/main.js"></script>    
